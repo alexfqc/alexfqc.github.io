@@ -1,5 +1,6 @@
 body{
-    color: white;
+    background-color: #f37908;
+    color:#fff;
     margin: 0;
     padding: 0;
     font-family: lato;
@@ -7,11 +8,14 @@ body{
     min-height: 480px;
 }
 
-.container{
-    padding: 15px;
-    background-color: #f37908;
-    min-height: 100%;
+*{
     box-sizing: border-box;
+}
+
+#header-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 @media (max-width:359px){
@@ -23,14 +27,17 @@ body{
 
 
 @media (max-width:768px){
+    .container{
+        padding: 15px;
+        min-height: 100%;
+        box-sizing: border-box;
+    }
+    
     #header-content{
         width: 100%;
     }
 
     #header-img{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
         width: 120px;
     }
 
@@ -253,7 +260,7 @@ body{
 }
 
 
-@media (min-width:360px){
+@media (min-width:360px) and (max-height:768px){
     .description{
         width: 100%;
         position: relative;
@@ -292,4 +299,106 @@ body{
         font-size: 18px;
     }
     
+}
+
+@media (min-width:769px){
+    
+    .container{
+        padding-top: 15px;
+        min-height: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        width: 970px;
+    }
+    
+    #header-img{
+        width: 150px;
+    }
+    #header-content > span{
+        width: 100%;
+        float: left;
+        position: relative;
+        text-align: center;
+    }
+    
+    #header-content > .title{
+        font-size: 32px;
+        margin-top: 10px;
+    }
+    
+    #header-content > .job{
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    
+    .description{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 50px;
+        float: left;   
+    }
+    
+    main{
+        width: 100%;
+        float: left;
+    }
+    
+    #main-img{
+        float: left;
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    .social-container{
+        display: inline-block;
+        width: 33.33%;
+        height: 75px;
+        float: left;
+    }
+    
+    .social-logo{
+        background-repeat: no-repeat;
+        background-size: 75px;
+        height: 75px;
+        width: 75px;
+    }
+
+    #facebook-logo{
+        background-image: url('../img/facebook.png');
+        float: left;
+        position: relative;
+        display: block;
+        transition: background-position 0.7s ease, opacity 0.7s linear;
+    }
+
+    #twitter-logo{
+        background-image: url('../img/twitter.png');
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition: background-position 0.7s ease, opacity 0.7s linear;
+    }
+
+    #linkedin-logo{
+        background-image: url('../img/linkedin.png');
+        float: right;
+        display: block;
+        transition: background-position 0.7s ease, opacity 0.7s linear;
+    }
+    
+    footer{
+        float: left;
+        position: absolute;
+        bottom: 0;
+        padding: 10px 20px;
+        border-top: solid 2px;
+        width: 970px;   
+    }
+    
+    .info-container{
+        padding: 5px 0;   
+    }
 }
