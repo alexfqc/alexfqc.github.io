@@ -374,7 +374,7 @@ body{
     #main-img{
         float: left;
         width: 75%;
-        margin-top: 80px;
+        margin-top: 103px;
         margin-left: 12.5%;
     }
     
@@ -421,10 +421,54 @@ body{
         bottom: 0;
         padding: 10px 20px;
         width: 100%;
-        box-sizing: border-box; 
+        box-sizing: border-box;
+    }
+    
+    .footer-sub-container{
+        float: left;
+        width: 100%;
     }
     
     .info-container{
-        padding: 5px 0;   
+        padding: 5px 0;
+        border: solid 3px #fff;
+        border-radius: 10px;
+        width: 230px;
+        height: 130px;
+        float: left;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 18px;
+        
+        margin-bottom: 50px;
     }
+    
+    .info-container:nth-child(odd){
+        margin-left: 205px;
+    }
+    
+    .info-container:nth-child(even){
+        margin-left: 100px;
+    }
+    
+    .email-img{
+        background: url('../img/email.png') no-repeat;
+        background-size: 71px 52px;
+        width: 71px;
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 13px;
+    }
+    
+    .graduation-img{
+        background: url('../img/graduation.png') no-repeat;
+        background-size: 80px 46px;
+        width: 80px;
+        height: 46px;
+        margin: 9px auto 16px auto;
+    }
+    
 }
