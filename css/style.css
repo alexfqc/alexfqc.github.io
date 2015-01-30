@@ -1,3 +1,7 @@
+html{
+    max-height: 100%;
+}
+
 body{
     background-color: #f37908;
     color:#fff;
@@ -6,10 +10,7 @@ body{
     font-family: lato;
     min-width: 320px;
     min-height: 480px;
-}
-
-*{
-    box-sizing: border-box;
+    max-height: 100%;
 }
 
 #header-img{

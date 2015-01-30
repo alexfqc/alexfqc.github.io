@@ -10,29 +10,31 @@ window.onload = function(){
     var window_height = window.innerHeight; 
     
     window.onclick = function(){
-        if(open === false){
-            footer.style.height = footerC_size + 'px';
-            if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
-                faceLogo.style.backgroundPositionX = '-80px';
-                twitterLogo.style.backgroundPositionY = '-80px';
-                linkedinLogo.style.backgroundPositionX = '80px';
-                faceLogo.style.opacity = '0';
-                twitterLogo.style.opacity = '0';
-                linkedinLogo.style.opacity = '0';
+        if(window.innerHeight <= 768){
+            if(open === false){
+                footer.style.height = footerC_size + 'px';
+                if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
+                    faceLogo.style.backgroundPositionX = '-80px';
+                    twitterLogo.style.backgroundPositionY = '-80px';
+                    linkedinLogo.style.backgroundPositionX = '80px';
+                    faceLogo.style.opacity = '0';
+                    twitterLogo.style.opacity = '0';
+                    linkedinLogo.style.opacity = '0';
+                }
+                open = true;
             }
-            open = true;
-        }
-        else {
-            footer.style.height = '22px';
-            if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
-                faceLogo.style.backgroundPositionX = '0px';
-                twitterLogo.style.backgroundPositionY = '0px';
-                linkedinLogo.style.backgroundPositionX = '0px';
-                faceLogo.style.opacity = '1';
-                twitterLogo.style.opacity = '1';
-                linkedinLogo.style.opacity = '1';
+            else {
+                footer.style.height = '22px';
+                if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
+                    faceLogo.style.backgroundPositionX = '0px';
+                    twitterLogo.style.backgroundPositionY = '0px';
+                    linkedinLogo.style.backgroundPositionX = '0px';
+                    faceLogo.style.opacity = '1';
+                    twitterLogo.style.opacity = '1';
+                    linkedinLogo.style.opacity = '1';
+                }
+                open = false;
             }
-            open = false;
         }
         
     }
