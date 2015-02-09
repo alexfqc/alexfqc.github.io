@@ -12,7 +12,7 @@ window.onload = function(){
     var window_height = window.innerHeight; 
     var expanded_size = footerC_size + footerArrow_size;
     footerArrow.onclick = function(){
-        if(window.innerHeight <= 768){
+        if(window.innerHeight < 768){
             if(open === false){
                 footer.style.height = expanded_size + 'px';
                 footerArrow.classList.remove('arrow-up');                                                
@@ -47,15 +47,11 @@ window.onload = function(){
     
     window.onresize = function(){
         
-        if(window.innerWidth > 768){
-            footer.style.height = footer_size + 'px';    
+        if(window.innerWidth >= 768){
+            footer.style.height = 'auto';    
         }
         
         
     }
     
 };
-
-
-
-
