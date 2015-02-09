@@ -1,5 +1,7 @@
 window.onload = function(){
     var footer = document.getElementById('footer');
+    var footerArrow = document.getElementById('footer-arrow');
+    var footerArrow_size = footerArrow.clientHeight;
     var footerC = document.getElementById('footer-container');
     var footer_size = footer.clientHeight;
     var footerC_size = footerC.clientHeight + 5;
@@ -8,11 +10,13 @@ window.onload = function(){
     var linkedinLogo = document.getElementById('linkedin-logo');
     var open = false;
     var window_height = window.innerHeight; 
-    
-    window.onclick = function(){
+    var expanded_size = footerC_size + footerArrow_size;
+    footerArrow.onclick = function(){
         if(window.innerHeight <= 768){
             if(open === false){
-                footer.style.height = footerC_size + 'px';
+                footer.style.height = expanded_size + 'px';
+                footerArrow.classList.remove('arrow-up');                                                
+                footerArrow.classList.add('arrow-down');                                                
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
                     faceLogo.style.backgroundPositionX = '-80px';
                     twitterLogo.style.backgroundPositionY = '-80px';
@@ -24,7 +28,9 @@ window.onload = function(){
                 open = true;
             }
             else {
-                footer.style.height = '22px';
+                footerArrow.classList.remove('arrow-down');                                                
+                footerArrow.classList.add('arrow-up'); 
+                footer.style.height = footer_size + 'px';
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
                     faceLogo.style.backgroundPositionX = '0px';
                     twitterLogo.style.backgroundPositionY = '0px';
@@ -40,16 +46,16 @@ window.onload = function(){
     }
     
     window.onresize = function(){
-        if(window_height != window.innerHeight){
-            footerC_size = footerC.clientHeight + 5;
-            console.log(footerC_size);
-            footer.style.height = '22px';
+        
+        if(window.innerWidth > 768){
+            footer.style.height = footer_size + 'px';    
         }
         
         
     }
     
 };
+
 
 
 
