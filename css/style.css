@@ -217,15 +217,19 @@ body{
         float: left;
         overflow: hidden;
         text-overflow: clip;
-        height: 22px;
+        height: 36px;
         bottom: 0;
         transition: height 0.75s ease;
     }
     
-    footer:before{
-        border-left: solid 7px transparent;
-        border-right: solid 7px transparent;
-        border-bottom: solid 7px #fff;
+    #footer-arrow{
+        width: 100%;
+        margin: 5px auto 10px auto;
+    }
+    
+    #footer-arrow:before{
+        border-left: solid 15px transparent;
+        border-right: solid 15px transparent;
         content: '';
         width: 0;
         height: 0;
@@ -234,12 +238,20 @@ body{
         margin-right: auto;
     }
     
+    .arrow-up:before{
+        border-bottom: solid 18px #fff;
+        
+    }
+    
+    .arrow-down:before{
+        border-top: solid 18px #fff;
+    }
+    
     #footer-container{
         float: left;
         position: relative;
         width: 100%;
         border-top: solid 2px #fff;
-        margin-top: 10px;
         padding: 10px 0;
         overflow: hidden;
     }
