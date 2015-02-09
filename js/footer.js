@@ -14,7 +14,7 @@ window.onload = function(){
     footerArrow.onclick = function(){
         if(window.innerWidth < 768){
             if(open === false){
-                footer.style.height = expanded_size + 'px';
+                footer.style.height = '171px';
                 footerArrow.classList.remove('arrow-up');                                                
                 footerArrow.classList.add('arrow-down');                                                
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
@@ -30,7 +30,7 @@ window.onload = function(){
             else {
                 footerArrow.classList.remove('arrow-down');                                                
                 footerArrow.classList.add('arrow-up'); 
-                footer.style.height = footer_size + 'px';
+                footer.style.height = '36px';
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
                     faceLogo.style.backgroundPositionX = '0px';
                     twitterLogo.style.backgroundPositionY = '0px';
@@ -52,7 +52,7 @@ window.onload = function(){
         }
         
         else{
-            footer.style.height = footer_size + 'px'; 
+            footer.style.height = '36px'; 
         }        
         
     }
