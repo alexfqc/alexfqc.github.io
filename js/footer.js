@@ -1,4 +1,5 @@
 window.onload = function(){
+    
     var footer = document.getElementById('footer');
     var footerArrow = document.getElementById('footer-arrow');
     var footerArrow_size = footerArrow.clientHeight;
@@ -11,12 +12,11 @@ window.onload = function(){
     var open = false;
     var window_height = window.innerHeight; 
     var expanded_size = footerC_size + footerArrow_size;
-    footerArrow.onclick = function(){
+
+    footer.onclick = function(){
         if(window.innerWidth < 768){
             if(open === false){
-                footer.style.height = '171px';
-                footerArrow.classList.remove('arrow-up');                                                
-                footerArrow.classList.add('arrow-down');                                                
+                                                       
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
                     faceLogo.style.backgroundPositionX = '-80px';
                     twitterLogo.style.backgroundPositionY = '-80px';
@@ -25,12 +25,11 @@ window.onload = function(){
                     twitterLogo.style.opacity = '0';
                     linkedinLogo.style.opacity = '0';
                 }
-                open = true;
+                openMenu();  
             }
             else {
-                footerArrow.classList.remove('arrow-down');                                                
-                footerArrow.classList.add('arrow-up'); 
-                footer.style.height = '36px';
+                
+                
                 if(window.innerHeight < 550 && window.innerWidth >= 360 && window.innerWidth <= 480){
                     faceLogo.style.backgroundPositionX = '0px';
                     twitterLogo.style.backgroundPositionY = '0px';
@@ -39,7 +38,8 @@ window.onload = function(){
                     twitterLogo.style.opacity = '1';
                     linkedinLogo.style.opacity = '1';
                 }
-                open = false;
+                closeMenu();
+                
             }
         }
         
@@ -52,9 +52,24 @@ window.onload = function(){
         }
         
         else{
-            footer.style.height = '36px'; 
+            closeMenu();
         }        
         
+    }
+    
+    function openMenu(){
+        footer.style.height = '171px';
+        footerArrow.classList.remove('arrow-up');                                                
+        footerArrow.classList.add('arrow-down');   
+        open = true;
+
+    }
+
+    function closeMenu(){
+        footerArrow.classList.remove('arrow-down');                                                
+        footerArrow.classList.add('arrow-up'); 
+        footer.style.height = '36px'; 
+        open = false;
     }
     
 };
