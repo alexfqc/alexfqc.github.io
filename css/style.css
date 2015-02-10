@@ -212,7 +212,7 @@ body{
     }
 
     footer{
-        position: absolute;
+        position: fixed;
         margin: 10px 15px 15px 0;
         float: left;
         overflow: hidden;
@@ -220,6 +220,9 @@ body{
         height: 36px;
         bottom: 0;
         transition: height 0.75s ease;
+        width: 100%;
+        cursor:pointer;
+        left:0;
     }
     
     #footer-arrow{
@@ -250,10 +253,11 @@ body{
     #footer-container{
         float: left;
         position: relative;
-        width: 100%;
+        width: 95%;
         border-top: solid 2px #fff;
         padding: 10px 0;
         overflow: hidden;
+        margin-left: 2.5%;
     }
 
     .info-container{
