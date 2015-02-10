@@ -406,7 +406,7 @@ body{
     #main-img{
         float: left;
         width: 90%;
-        margin-top: 103px;
+        margin-top: 25px;
         margin-left: 5%;
     }
     
@@ -422,8 +422,7 @@ body{
         box-sizing: border-box;
         text-align: center;
         font-size: 16px;
-        
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     
     .info-container:nth-child(odd){
