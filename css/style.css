@@ -403,6 +403,14 @@ body{
         width: 750px;   
     }
     
+    #main-img{
+        float: left;
+        width: 90%;
+        margin-top: 103px;
+        margin-left: 5%;
+    }
+    
+    
     .info-container{
         padding: 5px 0;
         border: solid 3px #fff;
@@ -455,25 +463,31 @@ body{
         padding: 5px 0;
         border: solid 3px #fff;
         border-radius: 10px;
-        width: 230px;
-        height: 130px;
+        width: 200px;
+        height: 100px;
         float: left;
         display: block;
         box-sizing: border-box;
         text-align: center;
         font-size: 18px;
-        
-        margin-bottom: 50px;
+        margin-bottom: 32px;
     }
     
     .info-container:nth-child(odd){
-        margin-left: 205px;
+        margin-left: 210px;
     }
     
-    .info-container:nth-child(even){
-        margin-left: 100px;
+    .info-container:nth-child(even) {
+        margin-left: 150px;
     }
     
+    #main-img{
+        float: left;
+        width: 75%;
+        margin-top: 25px;
+        margin-left: 12.5%;
+    }
+        
     .email-img{
         background: url('../img/email.png') no-repeat;
         background-size: 71px 52px;
@@ -493,6 +507,8 @@ body{
         margin: 9px auto 16px auto;
     }
 }
+
+
 
 @media (min-width:768px){
     
@@ -553,20 +569,13 @@ body{
         width: 100%;
         text-align: center;
         font-size: 22px;
-        margin-top: 50px;
+        margin-top: 25px;
         float: left;   
     }
     
     main{
         width: 100%;
         float: left;
-    }
-    
-    #main-img{
-        float: left;
-        width: 75%;
-        margin-top: 103px;
-        margin-left: 12.5%;
     }
     
     .social-container{
@@ -608,11 +617,11 @@ body{
     
     footer{
         float: left;
-        position: absolute;
-        bottom: 0;
+        position: relative;
         padding: 10px 20px;
         width: 100%;
         box-sizing: border-box;
+        margin-top: 25px;
     }
     
     .footer-sub-container{
