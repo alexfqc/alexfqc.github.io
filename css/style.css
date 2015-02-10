@@ -469,7 +469,7 @@ body{
         display: block;
         box-sizing: border-box;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 32px;
     }
     
@@ -490,21 +490,21 @@ body{
         
     .email-img{
         background: url('../img/email.png') no-repeat;
-        background-size: 71px 52px;
-        width: 71px;
-        height: 52px;
+        background-size: 64px 47px;
+        width: 64px;
+        height: 47px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px;
-        margin-top: 13px;
+        margin-bottom: 5px;
+        margin-top: 8px;
     }
     
     .graduation-img{
         background: url('../img/graduation.png') no-repeat;
-        background-size: 80px 46px;
-        width: 80px;
-        height: 46px;
-        margin: 9px auto 16px auto;
+        background-size: 72px 42px;
+        width: 72px;
+        height: 42px;
+        margin: 2px auto;
     }
 }
 
