@@ -188,8 +188,8 @@ body{
         width: 60px;
     }
 
-    #facebook-logo{
-        background-image: url('../img/facebook.png');
+    #github-logo{
+        background-image: url('../img/github.png');
         float: left;
         position: relative;
         display: block;
@@ -591,8 +591,8 @@ body{
         width: 75px;
     }
 
-    #facebook-logo{
-        background-image: url('../img/facebook.png');
+    #github-logo{
+        background-image: url('../img/github.png');
         float: left;
         position: relative;
         display: block;
