@@ -1,0 +1,47 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 750px;
+  }
+  #main-img {
+    float: left;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 5%;
+  }
+  .info-container {
+    padding: 5px 0;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 110px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .info-container:nth-child(odd) {
+    margin-left: 125px;
+  }
+  .info-container:nth-child(even) {
+    margin-left: 100px;
+  }
+  .email-img {
+    background: url('../img/email.png') no-repeat;
+    background-size: 64px 47px;
+    width: 64px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+  .graduation-img {
+    background: url('../img/graduation.png') no-repeat;
+    background-size: 72px 42px;
+    width: 72px;
+    height: 42px;
+    margin: 5px auto 5px auto;
+  }
+}

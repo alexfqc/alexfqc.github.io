@@ -8,8 +8,16 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/visitCard.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/footer.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/higherResolution.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css">
+    <!-- endbuild -->
+
+
 </head>
 <body>
 <div class="container-page">
@@ -29,43 +37,61 @@
             <div id="facebook" class="social-container">
                 <a href="https://github.com/alexfqc" target="_blank" id="github-logo" class="social-logo"></a>
             </div>
-            <div id="twitter" class="social-container">
-                <a href="https://twitter.com/AlessanderFQC" target="_blank" id="twitter-logo" class="social-logo"></a>
+            <div id="stack" class="social-container">
+                <a href="http://stackoverflow.com/users/4197747/alessander-fran%C3%A7a?tab=profile" target="_blank" id="stack-logo" class="social-logo"></a>
             </div>
             <div id="linkedin" class="social-container">
                 <a href="https://www.linkedin.com/pub/alessander-fran%C3%A7a/26/20b/610" target="_blank" id="linkedin-logo" class="social-logo"></a>
             </div>
         </div>
         </div>
-    </main>  
+    </main>
     <footer id='footer' >
         <div id='footer-arrow' class='arrow-up'></div>
-        
+
         <div id="footer-container" class="container">
             <div class='footer-sub-container'>
                 <div id="cellphone" class="info-container">
+                  <div id="cellphone-img-container" class="img-container">
                     <div class="cellphone-img"></div>
-                    <div class="cellphone-text">+55 16 9 8103 6880</div>
+                  </div>
+                  <div id="cellphone-text-container" class="text-container">
+                    <div id="cellphone-text" class="info-container-text">+55 16 9 8103 6880</div>
+                  </div>
                 </div>
                 <div id="email" class="info-container">
+                  <div id="email-img-container" class="img-container">
                     <div class="email-img"></div>
-                    <div class="email-text">alessander70@gmail.com</div>
+                  </div>
+                  <div id="email-text-container" class="text-container">
+                    <div id="email-text" class="info-container-text">alessander70@gmail.com</div>
+                  </div>
                 </div>
             </div>
             <div class='footer-sub-container'>
                 <div id="graduation" class="info-container">
-                    <div class="graduation-img"></div>
-                    <div class="graduation-text">Federal University of São Carlos</div>
+                    <div id="graduation-img-container" class="img-container">
+                      <div class="graduation-img"></div>
+                    </div>
+                    <div id="graduation-text-container" class="text-container">
+                      <div id="graduation-text" class="info-container-text">UFSCar</div>
+                    </div>
                 </div>
                 <div id="work-place" class="info-container">
+                  <div id="work-img-container" class="img-container">
                     <div class="work-place-img"></div>
-                    <div class="work-place-text">Campinas - Brazil</div>
+                  </div>
+                  <div id="work-text-container" class="text-container">
+                    <div id="work-place-text" class="info-container-text">Campinas - Brazil</div>
+                  </div>
                 </div>
             </div>
         </div>
     </footer>
 </div>
-    
- 
+
+ <!-- build:js js/footer.min.js -->
+    <script src="js/footer.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
