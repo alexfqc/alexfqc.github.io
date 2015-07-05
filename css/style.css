@@ -35,7 +35,6 @@
     margin-top: 1.1em;
   }
 }
-
 @media (max-width: 767px) and (orientation: portrait) {
   .container-page {
     padding: 15px;
@@ -76,24 +75,33 @@
     width: 60px;
   }
   #github-logo {
-    background-image: url('../img/github.png');
+    background-image: url("../img/github.png");
     float: left;
     position: relative;
     display: block;
-    transition: background-position 0.7s ease, opacity 0.7s linear;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
-  #twitter-logo {
-    background-image: url('../img/twitter.png');
+  #stack-logo {
+    background-image: url("../img/stack.png");
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transition: background-position 0.7s ease, opacity 0.7s linear;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   #linkedin-logo {
-    background-image: url('../img/linkedin.png');
+    background-image: url("../img/linkedin.png");
     float: right;
     display: block;
-    transition: background-position 0.7s ease, opacity 0.7s linear;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   footer {
     position: fixed;
@@ -110,7 +118,7 @@
   }
   #footer-arrow {
     width: 100%;
-    margin: 5px auto 10px auto;
+    margin: 5px auto 10px;
   }
   #footer-arrow:before {
     border-left: solid 15px transparent;
@@ -142,13 +150,28 @@
     float: left;
     margin: 5px 0;
   }
-  .cellphone-img {
-    background: url('../img/cel.png') no-repeat;
-    background-size: 18px 28px;
-    width: 18px;
-    height: 28px;
+  .img-container {
     float: left;
-    margin-left: 5px;
+    position: relative;
+    width: 15%;
+    height: 30px;
+  }
+  .text-container {
+    float: left;
+    position: relative;
+    width: 85%;
+    height: 30px;
+    line-height: 1.66;
+  }
+  .cellphone-img {
+    background-size: 18px 32px;
+    width: 18px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    top: 50%;
+    margin-top: -16px;
   }
   .cellphone-text {
     line-height: 1.7;
@@ -157,13 +180,14 @@
     float: left;
   }
   .email-img {
-    background: url('../img/email.png') no-repeat;
-    background-size: 24px 17px;
-    width: 24px;
-    height: 17px;
-    float: left;
-    margin-top: 3px;
-    margin-left: 2px;
+    background-size: 32px 20px;
+    width: 32px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    top: 50%;
+    margin-top: -10px;
   }
   .email-text {
     margin-left: 10px;
@@ -171,12 +195,14 @@
     float: left;
   }
   .graduation-img {
-    background: url('../img/graduation.png') no-repeat;
-    background-size: 29px 17px;
-    width: 29px;
-    height: 17px;
-    float: left;
-    margin-top: 3px;
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    top: 50%;
+    margin-top: -14px;
   }
   .graduation-text {
     margin-left: 7px;
@@ -184,12 +210,14 @@
     float: left;
   }
   .work-place-img {
-    background: url('../img/graduation.png') no-repeat;
-    background-size: 29px 17px;
-    width: 29px;
-    height: 17px;
-    float: left;
-    margin-top: 3px;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -13px;
   }
   .work-place-text {
     margin-left: 7px;
@@ -203,7 +231,7 @@
   }
   #footer-container {
     margin-top: 5px;
-    padding: 6px 0 7px 0;
+    padding: 6px 0 7px;
   }
   .job {
     margin-top: 5px;

@@ -1,4 +1,26 @@
 @media (min-width: 768px) {
+  .container {
+    width: 970px;
+  }
+  .info-container {
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    width: 280px;
+    height: 100px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+  }
+  .info-container:nth-child(odd) {
+    margin-left: 150px;
+  }
+  .info-container:nth-child(even) {
+    margin-left: 110px;
+  }
   .container-page {
     float: left;
     width: 100%;
@@ -65,13 +87,17 @@
     background-size: 75px;
     height: 75px;
     width: 75px;
+    -moz-transition: background 0.7s ease, opacity 0.7s linear;
+    transition: background 0.7s ease, opacity 0.7s linear;
+    -webkit-transition: background 0.7s ease, opacity 0.7s linear;
+    -o-transition: background 0.7s ease, opacity 0.7s linear;
+
   }
   #github-logo {
     background-image: url('../img/github.png');
     float: left;
     position: relative;
     display: block;
-    transition: background 0.7s ease, opacity 0.7s linear;
   }
   #github-logo:hover {
     background-image: url('../img/github-hover.png');
@@ -81,7 +107,6 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transition: background 0.7s ease, opacity 0.7s linear;
   }
   #stack-logo:hover{
     background-image: url('../img/stack-hover.png');
@@ -91,7 +116,7 @@
     background-image: url('../img/linkedin.png');
     float: right;
     display: block;
-    transition: background 0.7s ease, opacity 0.7s linear;
+
   }
 
   #linkedin-logo:hover {
